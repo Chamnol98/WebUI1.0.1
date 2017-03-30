@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page
+    </title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale">
+    <link rel="stylesheet" href="css/HomepageStyle.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+<body>
+    <div class="container" id="viewport">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Login</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="#aaa">Admin</a>
+                 <a href="#bbb">Monk</a>
+                  <a href="SignUp.html">Signup</a>  
+            </div>
+</div>
+        <div id="img-logo">
+            <img src="image/logo.png" alt="logo">
+        </div>
+       <form>
+            <div id="search-area">
+                <input type="text" id="search-box" placeholder="Seach by name or province" style="opacity:0.8">
+                <button type="submit" onclick="submit" id="search-button"><img id="search-logo" src="image/search-button-clipart-1.jpg" alt="search-img"></button>
+            </div>
+        </form>
+        <div>
+            <a id="qr" href="ForgetPassprocss1.html"><img src="image/QR%20code.png" alt="Qr-code"></a>
+            </div>
+    </div>
+    <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {  document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    </body>
+</html>
